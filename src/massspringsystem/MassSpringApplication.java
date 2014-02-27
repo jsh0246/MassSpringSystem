@@ -48,7 +48,7 @@ public class MassSpringApplication implements Application
         while(stateTime < time + 10)
         {
             stateTime += 10;
-            mss.update(0.1f);
+            mss.update(0.01f);
         }
         return true;
     }
