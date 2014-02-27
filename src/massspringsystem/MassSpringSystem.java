@@ -60,5 +60,24 @@ public class MassSpringSystem
         {
             m.update(dt);
         }
+        
+        //Clear forces
+        for(PointMass m : masses)
+        {
+            m.clearForces();
+        }
+    }
+    
+    public void draw(MassSpringDrawer render)
+    {
+        for(Spring s : springs)
+        {
+            render.drawSpring(s.getPosA(), s.getPosB());
+        }
+        
+        for(PointMass m : masses)
+        {
+            render.drawMass(m.getPosition());
+        }
     }
 }

@@ -16,7 +16,7 @@ import geometry2d.Vector2D;
  */
 public class Spring
 {
-    private static final float SPRING_CONSTANT = 1.0f;
+    private static final float SPRING_CONSTANT = 10.0f;
     private final PointMass a;
     private final PointMass b;
     private final float idealLength;
